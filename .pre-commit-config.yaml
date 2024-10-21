@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v5.0.0
     hooks:
     -   id: check-added-large-files
         args: ['--maxkb=2000']
@@ -25,20 +25,20 @@ repos:
     # -   id: python-use-type-annotations
     -   id: text-unicode-replacement-char
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.0
+    rev: v3.18.0
     hooks:
     -   id: pyupgrade
         args: [--py37-plus]
 -   repo: https://github.com/asottile/reorder-python-imports
-    rev: v3.12.0
+    rev: v3.14.0
     hooks:
     -   id: reorder-python-imports
 -   repo: https://github.com/asottile/setup-cfg-fmt
-    rev: v2.5.0
+    rev: v2.7.0
     hooks:
     -   id: setup-cfg-fmt
 -   repo: https://github.com/psf/black
-    rev: 23.11.0
+    rev: 24.10.0
     hooks:
     -   id: black
 -   repo: https://github.com/PyCQA/docformatter
@@ -47,11 +47,11 @@ repos:
     -   id: docformatter
         args: [--in-place, --wrap-summaries, "88", --wrap-descriptions, "88", --blank]
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.1.6
+    rev: v0.7.0
     hooks:
       - id: ruff
 -   repo: https://github.com/dosisod/refurb
-    rev: v1.24.0
+    rev: v2.0.0
     hooks:
     -   id: refurb
         args: [--ignore, FURB126]
@@ -59,12 +59,12 @@ repos:
                 - mypy<1.7 # SEE: https://github.com/dosisod/refurb/issues/305
 
 -   repo: https://github.com/econchick/interrogate
-    rev: 1.5.0
+    rev: 1.7.0
     hooks:
     -   id: interrogate
         args: [-v, --fail-under=40]
 -   repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.17
+    rev: 0.7.18
     hooks:
     -   id: mdformat
         additional_dependencies: [
@@ -74,7 +74,7 @@ repos:
         args: [--wrap, "88"]
         files: (README\.md)
 -   repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.17
+    rev: 0.7.18
     hooks:
     -   id: mdformat
         additional_dependencies: [
@@ -89,7 +89,7 @@ repos:
         #         path/to/file.py
         #     )$
 -   repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
+    rev: v2.3.0
     hooks:
     -   id: codespell
 -   repo: meta
